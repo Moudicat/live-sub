@@ -13,7 +13,6 @@ class Room extends events_1.EventEmitter {
         else {
             this.id = cfg.id;
         }
-        console.log(this.id);
         this.roomid = -1;
         this.initInfo();
     }

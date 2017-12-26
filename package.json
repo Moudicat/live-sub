@@ -1,23 +1,25 @@
 {
   "name": "bililive-sub",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "main": "./dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "nodemon": "nodemon ./examples/index.js",
-    "dev": "npm run clean && tsc && npm run nodemon",
-    "publish": "npm run clean && tsc && npm publish"
+    "dev": "npm run clean && tsc && npm run nodemon"
   },
   "repository": "https://github.com/moudicat/live-sub.git",
   "author": "Moudicat <i@0u0b.com>",
   "license": "MIT",
   "dependencies": {
+    "lodash.isequal": "^4.5.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
     "@types/node": "^8.5.2",
     "@types/request": "^2.0.9",
     "concurrently": "^3.5.1",
-    "lodash.isequal": "^4.5.0",
     "nodemon": "^1.14.3",
-    "request-promise": "^4.2.2",
     "rimraf": "^2.6.2",
     "typescript": "^2.6.2"
   }
